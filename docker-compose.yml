@@ -1,0 +1,10 @@
+version: '3'
+services:
+  back:
+    image: impro-spring-back:1.0.0-SNAPSHOT
+    network_mode: "host"
+
+  front:
+    build: front
+    ports:
+      - "80:80"
